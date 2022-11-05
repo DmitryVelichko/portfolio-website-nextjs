@@ -1,14 +1,32 @@
-import React from 'react'
-import {SocialIcon} from 'react-social-icons'
+import React from 'react';
+import { SocialIcon } from 'react-social-icons';
 
-type Props = {}
+type Props = {};
 
 export default function Header({}: Props) {
   return (
     <header>
-        <div>
-    <SocialIcon url='https://www.youtube.com/channel/UCMoXZFDHxWvNQHYfTo2nyPA/videos' fgColor='gray' bgColor='transparent'/>
-        </div>
+      <div className='flex flex-row items-center'>
+        <SocialIcon
+          url='https://www.youtube.com/channel/UCMoXZFDHxWvNQHYfTo2nyPA/videos'
+          fgColor='gray'
+          bgColor='transparent'
+        />
+        <SocialIcon
+          url='https://www.youtube.com/channel/UCMoXZFDHxWvNQHYfTo2nyPA/videos'
+          fgColor='gray'
+          bgColor='transparent'
+        />
+        <SocialIcon
+          url='https://www.youtube.com/channel/UCMoXZFDHxWvNQHYfTo2nyPA/videos'
+          fgColor='gray'
+          bgColor='transparent'
+        />
+      </div>
+
+      <div>
+        
+      </div>
     </header>
-  )
+  );
 }

@@ -25,7 +25,11 @@ export default function Header({}: Props) {
       </div>
 
       <div>
-        
+        <SocialIcon className='cursor-pointer'
+        network='email'
+        fgColor='gray'
+        bgColor='transparent'
+        />
       </div>
     </header>
   );

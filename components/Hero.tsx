@@ -2,31 +2,45 @@
 // @ts-nocheck
 import React from 'react';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
-import BackgroundCircles from './BackgroundCircles'
-import photo1 from '../photos/photo1.jpg'
+import BackgroundCircles from './BackgroundCircles';
 
 type Props = {};
 
 export default function Hero({}: Props) {
   const [text, count] = useTypewriter({
-    words: [
-      "Hi, my name's Dmitry",
-      '<Frontend Web Dev />',
-      'Tech Stack: React, TypeScript, NextJS',
-    ],
+    words: ["Hi! I'm Dmitry", '<Frontend Dev />', 'React + TS + NextJS'],
     loop: true,
-    delaySpeed: 2000,
+    // delaySpeed: 1700, 🔥
+    // typeSpeed: 7, 💚
+    // deleteSpeed: 7, 👋
   });
   return (
     <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
-        <BackgroundCircles />
-        {/* https://sun9-43.userapi.com/impf/c844321/v844321444/8bd0d/FJD_aGJz-lM.jpg?size=1440x2160&quality=96&sign=06aaf419bc7442ec152a7ca0ae56b198&type=album */}
-        {/* https://sun9-66.userapi.com/impf/c853624/v853624011/128493/H7V2i7Bf0HU.jpg?size=1604x2160&quality=96&sign=5f402285a23023459a6346232c98fb5b&type=album */}
-        <img src='https://sun9-67.userapi.com/impf/c850136/v850136223/154992/gynb-Y3PLCU.jpg?size=720x1280&quality=96&sign=a793f8567d0f2703002c5c655216527c&type=album' alt="A man's face" />
-      <h1>
-        <span>{text}</span>
-        <Cursor cursorColor='#f7ab0a' />
-      </h1>
+      <BackgroundCircles />
+      {/* https://raw.githubusercontent.com/DmitryVelichko/personal-portfolio-website-js/main/images/photo1.png*/}
+
+      <img
+        className='relative rounded-full h-32 w-32 mx-auto object-cover'
+        src='https://raw.githubusercontent.com/DmitryVelichko/personal-portfolio-website-js/main/images/photo1.jpg'
+        alt="A man's face"
+      />
+      <div>
+        <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>
+          Software Engineer
+        </h2>
+        <h1 className='text-5xl lg:text-6xl font-semibold px-10'>
+          <span className='mr-3'>{text}</span>
+          <Cursor cursorColor='#f7ab0a' />
+        </h1>
+
+        <div>
+          <button className='heroButton'>About</button>
+          <button className='heroButton'>Experience</button>
+          <button className='heroButton'>Skills</button>
+          <button className='heroButton'>Projects</button>
+       
+        </div>
+      </div>
     </div>
   );
 }

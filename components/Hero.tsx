@@ -11,12 +11,12 @@ export default function Hero({}: Props) {
   const [text, count] = useTypewriter({
     words: ["Hi! I'm Dmitry", '<Frontend Dev />', 'Nice to meet you!'],
     loop: true,
-    // delaySpeed: 1700, 🔥
-    // typeSpeed: 7, 💚
-    // deleteSpeed: 7, 👋
+    delaySpeed: 1000, 
+    // typeSpeed: 7, 
+    deleteSpeed: 10, 
   });
   return (
-    <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
+    <div className='h-[120vh] flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
       <BackgroundCircles />
       <img
         className='relative rounded-full h-32 w-32 mx-auto object-cover '

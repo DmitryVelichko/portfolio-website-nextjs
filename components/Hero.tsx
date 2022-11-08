@@ -19,7 +19,7 @@ export default function Hero({}: Props) {
     <div className='h-[120vh] flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
       <BackgroundCircles />
       <img
-        className='relative rounded-full h-32 w-32 mx-auto object-cover '
+        className='relative rounded-full h-32 w-32 mx-auto object-cover object-center'
         src='https://raw.githubusercontent.com/DmitryVelichko/personal-portfolio-website-js/main/images/photo1.jpg'
         alt="A man's face"
       />

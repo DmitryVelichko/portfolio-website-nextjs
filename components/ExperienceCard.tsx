@@ -19,16 +19,17 @@ function ExperienceCard({}: Props) {
         alt=''
       />
 
-      <div>
-        <h4>CEO of Company</h4>
-        <p>CompanyName</p>
-        <div>
-          {/*Tech used */}
-          {/*Tech used */}
-          {/*Tech used */}
+      <div className='px-0 md:px-10'>
+        <h4 className='text-4xl font-light'>CEO of Company</h4>
+        <p className='font-bold text-2xl mt-1'>CompanyName</p>
+        <div className='flex space-x-2 my-2'>
+          <img 
+          className='h-10 w-10 rounded-full'
+          src="https://cdn.sanity.io/images/ltuexkre/production/2a67945990f9c2ef568cf7e8483c1a8174556463-500x500.png" alt="" />
         </div>
         <p>Started work... - Ended...</p>
-        <ul>
+
+        <ul className='list-disc space-y-4 ml-5 text-lg'>
           <li>Summary points</li>
           <li>Summary points</li>
           <li>Summary points</li>

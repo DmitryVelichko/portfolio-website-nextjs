@@ -26,6 +26,12 @@ function ExperienceCard({}: Props) {
           <img 
           className='h-10 w-10 rounded-full'
           src="https://cdn.sanity.io/images/ltuexkre/production/2a67945990f9c2ef568cf7e8483c1a8174556463-500x500.png" alt="" />
+           <img 
+          className='h-10 w-10 rounded-full'
+          src="https://cdn.sanity.io/images/ltuexkre/production/2a67945990f9c2ef568cf7e8483c1a8174556463-500x500.png" alt="" />
+           <img 
+          className='h-10 w-10 rounded-full'
+          src="https://cdn.sanity.io/images/ltuexkre/production/2a67945990f9c2ef568cf7e8483c1a8174556463-500x500.png" alt="" />
         </div>
         <p>Started work... - Ended...</p>
 

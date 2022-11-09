@@ -5,7 +5,7 @@ type Props = {};
 
 function ExperienceCard({}: Props) {
   return (
-    <article>
+    <article className='flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px]'>
       <motion.img
         initial={{
           y: -100,
@@ -33,7 +33,7 @@ function ExperienceCard({}: Props) {
           className='h-10 w-10 rounded-full'
           src="https://cdn.sanity.io/images/ltuexkre/production/2a67945990f9c2ef568cf7e8483c1a8174556463-500x500.png" alt="" />
         </div>
-        <p>Started work... - Ended...</p>
+        <p className='uppercase py-5 text-gray-300'>Started work... - Ended...</p>
 
         <ul className='list-disc space-y-4 ml-5 text-lg'>
           <li>Summary points</li>

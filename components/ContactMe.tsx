@@ -14,7 +14,7 @@ function ContactMe({}: Props) {
           I've got just what you need.{' '}
           <span className='decoration-[#f7ab0a]/50 underline'>Let's Talk.</span>
         </h4>
-        <div>
+        <div className='space-y-10'>
           <div className='flex items-center space-x-5 justify-center'>
             <PhoneIcon className='text-[#f7ab0a] h-7 w-7 animate-pulse' />
             <p className='text-2xl'>+1234567890</p>
@@ -27,8 +27,19 @@ function ContactMe({}: Props) {
             <MapPinIcon className='text-[#f7ab0a] h-7 w-7 animate-pulse' />
             <p className='text-2xl'>123 Developer Lane</p>
           </div>
-         
         </div>
+
+        <form className='flex flex-col space-y-2 w-fit mx-auto'>
+          <div>
+            <input type='text' />
+            <input type="text" />
+          </div>
+
+          <input type="text" />
+
+          <textarea />
+          <button>Submit</button>
+        </form>
       </div>
     </div>
   );

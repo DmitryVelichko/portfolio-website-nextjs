@@ -16,7 +16,7 @@ export default function Hero({}: Props) {
     deleteSpeed: 10, 
   });
   return (
-    <div className='h-[120vh] flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
+    <div className='h-[160vh] flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
       <BackgroundCircles />
       <img
         className='relative rounded-full h-32 w-32 mx-auto object-cover object-center'

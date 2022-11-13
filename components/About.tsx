@@ -24,7 +24,7 @@ function About({}: Props) {
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
           src='https://raw.githubusercontent.com/DmitryVelichko/personal-portfolio-website-js/main/images/profile%20photo.jpg'
-          className='mb-2 flex-shrink-0 w-56 h-56 rounded-full object-cover object-top md:rounded-lg md:w-64 md:h-95 \ xl:w-[300px] xl:h-[400px]' 
+          className='mb-2 flex-shrink-0 w-56 h-56 rounded-full object-cover object-top md:rounded-lg md:w-64 md:h-95 xl:w-[300px] xl:h-[400px]' 
         />
         <div className='space-y-10 px-0 md:px-10 '>
           <h4

@@ -13,7 +13,7 @@ function About({}: Props) {
       transition={{ duration: 1.5 }}
       className='flex flex-col relative h-[100vh] text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'
     >
-      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl mb-[30px]'>
+      <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl mb-[50px]'>
         About
       </h3>
       <motion.img
@@ -22,10 +22,10 @@ function About({}: Props) {
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
         src='https://raw.githubusercontent.com/DmitryVelichko/personal-portfolio-website-js/main/images/profile%20photo.jpg'
-        className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover object-top md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px] '
+        className='-mb-20 mt-[50px] md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover object-top md:rounded-lg md:w-64 md:h-95 xl:w-[300px] xl:h-[400px] '
       />
       <div className='space-y-10 px-0 md:px-10'>
-        <h4 className='text-4xl font-semibold'>
+        <h4 className='text-4xl font-semibold mt-[30px]'>
           Here is a{' '}
           <span className='underline decoration-[#f7ab0a]/50'>little</span>{' '}
           background

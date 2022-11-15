@@ -8,7 +8,7 @@ function Projects({}: Props) {
 
   return (
     <div className='flex relative flex-col items-center justify-center'>
-      <h3 className='mt-[100px] mb-[32px] uppercase tracking-[20px] text-gray-500 text-2xl'>
+      <h3 className='mt-[100px] mb-[62px] uppercase tracking-[20px] text-gray-500 text-2xl'>
         Projects
       </h3>
       <motion.div
@@ -19,7 +19,7 @@ function Projects({}: Props) {
       >
         <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80 scrollbar-thin'>
           {projects.map((project, i) => (
-            <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'>
+            <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center pb-20 md:pb-44 '>
               <motion.img
                 initial={{ y: -300, opacity: 0 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -32,9 +32,9 @@ function Projects({}: Props) {
               <div className='space-y-10 px-0 md:px-10 max-w-6xl'>
                 <h4 className='text-4xl font-semibold text-center'>
                   <span className='underline decoration-[#f7ab0a]/50'>
-                    Case Study {i + 1} of {projects.length}:
-                  </span>
-                  UPS Clone
+                    Case Study {i + 1} of {projects.length}: 
+                  </span>{' '}
+                   UPS Clone
                 </h4>
                 <p className='text-lg text-center md:text-left'>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.

@@ -8,7 +8,7 @@ type Props = {};
 function About({}: Props) {
   return (
     <div className='flex relative flex-col items-center justify-center'>
-      <h3 className='mt-[100px] mb-[32px] uppercase tracking-[20px] text-gray-500 text-2xl'>
+      <h3 className='mt-[100px] mb-[82px] uppercase tracking-[20px] text-gray-500 text-2xl'>
         About
       </h3>
 

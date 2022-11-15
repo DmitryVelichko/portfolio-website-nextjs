@@ -7,8 +7,8 @@ type Props = {};
 
 function About({}: Props) {
   return (
-    <div className='flex relative flex-col items-center justify-center '>
-      <h3 className='mt-[200px] uppercase tracking-[20px] text-gray-500 text-2xl mb-4 '>
+    <div className='flex relative flex-col items-center justify-center'>
+      <h3 className='mt-[100px] mb-[32px] uppercase tracking-[20px] text-gray-500 text-2xl'>
         About
       </h3>
 
@@ -16,7 +16,7 @@ function About({}: Props) {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className='flex flex-col relative h-[80vh] text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center '
+        className='flex flex-col relative text-center md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center '
       >
         <motion.img
           initial={{ x: -200, opacity: 0 }}
